@@ -1,8 +1,9 @@
 import * as React from "react"
 
-import { StaticImage } from "gatsby-plugin-image"
-
 import { graphql, useStaticQuery } from "gatsby";
+
+import Vector_1 from "../../images/vector_1_icon.svg";
+import Vector_2 from "../../images/vector_2_icon.svg";
 
 //Hero component
 const Hero = () => {
@@ -38,8 +39,8 @@ const Hero = () => {
                 </button>
             </div>
             <div className="hero__main__vector hidden md:hidden lg:block">
-                <StaticImage src="../../images/vector_1_icon.svg" height={500} className="absolute lg:right-0 lg:top-[8rem] xl:top-[2rem]"alt="vector_1_icon"/>
-                <StaticImage src="../../images/vector_2_icon.svg" height={400} className="absolute lg:right-0 lg:bottom-[2rem] xl:bottom-0"alt="vector_2_icon"/>
+                <img src={Vector_1} className="lg:w-[30rem] xl:w-[40rem] absolute lg:right-0 lg:top-[4rem] xl:top-0" alt="vector_1_icon"/>
+                <img src={Vector_2} width={550} className="lg:w-[24rem] xl:w-[30rem] absolute lg:right-0 lg:bottom-[12rem] xl:bottom-0" alt="vector_2_icon"/>
             </div>
         </div>
     )

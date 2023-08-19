@@ -11,7 +11,7 @@ const handleNavbarToggle = () => {
 
 const Navbar = () => {
     return (
-        <nav className="navbar h-2/6 md:h-1/5 bg-[#383F50]">
+        <nav className="navbar h-2/6 md:h-1/5 w-full md:w-full lg:w-full bg-[#383F50]">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between lg:justify-between mx-auto py-6 px-4 gap-x-8 gap-y-4">
                 <span className="flex items-center">
                     <div className="w-12 h-12 bg-[#FF8049] rounded-full mr-4 flex justify-center items-center">

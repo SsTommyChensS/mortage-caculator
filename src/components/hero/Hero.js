@@ -26,7 +26,7 @@ const Hero = () => {
     }
   `)
     return (
-        <div className="hero-section h-full md:h-fit lg:h-full md:w-screen bg-[#383F50] px-8 py-4 relative">
+        <div className="hero-section h-full md:h-fit lg:h-full md:w-full bg-[#383F50] px-8 py-4 relative">
             <div className="hero__main py-2 w-full md:w-2/5 relative left-4 md:left-24">
                 <h1 className="hero__main__title font-black text-3xl md:text-3xl lg:text-6xl text-white leading-normal md:leading-normal lg:leading-loose">
                     { hero_info.contentfulHero.title }
@@ -38,9 +38,9 @@ const Hero = () => {
                   { hero_info.contentfulHero.button }
                 </button>
             </div>
-            <div className="hero__main__vector hidden md:hidden lg:block">
-                <img src={Vector_1} className="lg:w-[30rem] xl:w-[40rem] absolute lg:right-0 lg:top-[4rem] xl:top-0" alt="vector_1_icon"/>
-                <img src={Vector_2} width={550} className="lg:w-[24rem] xl:w-[30rem] absolute lg:right-0 lg:bottom-[12rem] xl:bottom-0" alt="vector_2_icon"/>
+            <div className="hero__main__vector hidden md:block lg:block">
+                <img src={Vector_1} className="md:w-[20rem] lg:w-[30rem] xl:w-[40rem] absolute md:right-0 lg:right-0 md:top-[1rem] lg:top-[4rem] xl:top-0" alt="vector_1_icon"/>
+                <img src={Vector_2} className="md:w-[18rem] lg:w-[24rem] xl:w-[30rem] absolute md:right-0 lg:right-0 md:bottom-[2rem] lg:bottom-[12rem] xl:bottom-0" alt="vector_2_icon"/>
             </div>
         </div>
     )

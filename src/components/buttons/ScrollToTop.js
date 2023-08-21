@@ -18,7 +18,9 @@ const ScrollToTop = () => {
         });
     };
 
-    window.addEventListener('scroll', toggleVisible);
+    if(typeof window !== 'undefined') {
+        window.addEventListener('scroll', toggleVisible);
+    }
 
     return (
         <button onClick={scrollToTop} className={`${visible ? 'inline' : 'hidden'} p-2 lg:p-4 inline bg-[#FF8049] rounded-full fixed bottom-[2rem] lg:bottom-[4rem] right-[1rem] lg:right-[2rem] w-[3rem] h-[3rem] lg:w-[4rem] lg:h-[4rem]`}>

@@ -1,5 +1,7 @@
 import * as React from "react"
 
+import { moveToSection } from "../../utils/helper";
+
 const handleNavbarToggle = () => {
     let navbar_menu = document.getElementById("navbar-default");
     if(navbar_menu.classList.contains("hidden")) {
@@ -28,10 +30,10 @@ const Navbar = () => {
                 <div className="hidden w-full md:block md:w-auto bg-gray-500 rounded-lg md:bg-[#383F50] mt-2" id="navbar-default">
                     <ul className="font-medium text-xl flex flex-col gap-2 lg:gap-8 p-2 lg:p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
                         <li>
-                            <a href="/" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 hover:bg-gray-400 md:hover:bg-gray-600 md:hover:underline">Caculator</a>
+                            <span onClick={() => moveToSection('#caculator-section')} aria-hidden="true"className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 hover:bg-gray-400 md:hover:bg-gray-600 md:hover:underline">Caculator</span>
                         </li>
                         <li>
-                            <a href="/" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 hover:bg-gray-400 md:hover:bg-gray-600 md:hover:underline">Services</a>
+                            <span onClick={() => moveToSection('#service-section')} aria-hidden="true" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 hover:bg-gray-400 md:hover:bg-gray-600 md:hover:underline">Services</span>
                         </li>
                     </ul>
                 </div>

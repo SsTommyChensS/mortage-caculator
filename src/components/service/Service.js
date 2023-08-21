@@ -25,7 +25,7 @@ const Service = () => {
     `)
 
     return (
-        <div className="service-section h-max md:h-full lg:h-full md:w-full px-8 py-4 relative bg-gray-100">
+        <div id="service-section" className="service-section h-max md:h-full lg:h-full md:w-full px-8 py-4 relative bg-gray-100">
             <div className="service-section__title my-2 lg:my-4 font-black text-[#27292E] text-3xl md:text-5xl lg:text-7xl md:text-4xl lg:text-6xl text-center leading-loose md:leading-normal lg:leading-loose tracking-wider">
                 High Quality Output, <br/>Awesome Service
             </div>

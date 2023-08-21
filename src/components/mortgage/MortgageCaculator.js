@@ -35,7 +35,7 @@ const MortageCaculator = () => {
 
     return (
         <div className="mortage-section__caculator pl-[2rem] lg:pl-[8rem] pr-[2rem] py-[2rem] lg:py-[4rem] bg-[#383F50]">
-            <h1 className="caculator__title text-white font-bold text-3xl lg:text-6xl">Mortage Caculator</h1>
+            <h1 className="caculator__title text-white font-bold text-3xl lg:text-6xl">Mortgage Caculator</h1>
             <h3 className="caculator__description text-white text-sm lg:text-xl my-[1rem] lg:my-[3rem] leading-normal">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
             </h3>

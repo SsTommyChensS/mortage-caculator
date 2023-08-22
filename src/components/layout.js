@@ -3,6 +3,7 @@ import * as React from "react"
 import Navbar from "./navbar/Navbar"
 import Footer from "./footer/Footer"
 import ScrollToTop from "./buttons/ScrollToTop"
+import ScrollIndicator from "./scroll/scrollIndicator"
 
 const Layout = ({ children }) => {
   return (
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
       </div>
       <Footer/>
       <ScrollToTop/>
+      <ScrollIndicator/>
     </>
   )
 }

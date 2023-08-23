@@ -1,28 +1,12 @@
 import * as React from "react"
 
-import { graphql, useStaticQuery } from "gatsby";
+import useServiceData from "../../services/useServiceData";
 
 import ServiceItem from "./ServiceItem";
 
 //Hero component
 const Service = () => {
-    const service_info = useStaticQuery(graphql`
-        query ServiceQuery {
-            allContentfulIconIntroBlock {
-            edges {
-                node {
-                description
-                title
-                icon {
-                    file {
-                    url
-                    }
-                }
-                }
-            }
-            }
-        }
-    `)
+    const service_info = useServiceData();
 
     return (
         <div id="service-section" className="service-section h-max md:h-full lg:h-full md:w-full px-8 py-4 relative bg-gray-100">

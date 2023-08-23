@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { graphql, useStaticQuery } from "gatsby";
+import useHerotData from "../../services/useHeroData";
 
 import Vector_1 from "../../images/vector_1_icon.svg";
 import Vector_2 from "../../images/vector_2_icon.svg";
@@ -8,23 +8,8 @@ import Vector_2 from "../../images/vector_2_icon.svg";
 //Hero component
 const Hero = () => {
   //Get hero content data
-  const hero_info = useStaticQuery(graphql`
-    query HeroContentQuery {
-      contentfulHero(title: {eq: "Financial Advisor For Next Level Happy Life!"}) {
-        id
-        title
-        description {
-          description
-        }
-        image {
-          file {
-            url
-          }
-        }
-        button
-      }
-    }
-  `)
+  const hero_info = useHerotData();
+
     return (
         <div className="hero-section h-full md:h-fit lg:h-full md:w-full bg-[#383F50] px-8 py-4 relative">
             <div className="hero__main py-2 w-full md:w-2/5 relative left-4 md:left-24">

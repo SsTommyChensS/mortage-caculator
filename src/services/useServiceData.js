@@ -4,17 +4,13 @@ const useServiceData = () => {
     const service_info = useStaticQuery(graphql`
         query ServiceQuery {
             allContentfulIconIntroBlock {
-            edges {
-                node {
-                description
-                title
-                icon {
-                    file {
+                nodes {
+                    title
+                    description
+                    icon {
                     url
                     }
                 }
-                }
-            }
             }
         }
     `);

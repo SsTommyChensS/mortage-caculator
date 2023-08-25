@@ -15,9 +15,9 @@ const Service = () => {
             </div>
             <div className="service-section__servcies-list m-auto grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-2 h:max lg:h-96 mt-10 mb-10">
                 {
-                    service_info.allContentfulIconIntroBlock.edges.map((service, index) => {
+                    service_info.allContentfulIconIntroBlock.nodes.map((service, index) => {
                         return (
-                            <ServiceItem key={index} image={service.node.icon.file.url} title={service.node.title} description={service.node.description}/>
+                            <ServiceItem key={index} icon={service.icon.url} title={service.title} description={service.description}/>
                         )
                     })
                 }
